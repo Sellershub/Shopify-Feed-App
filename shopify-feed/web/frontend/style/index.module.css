@@ -1,0 +1,11 @@
+.container {
+    height:100vh;
+    padding:10px;
+    padding-bottom:40px;
+}
+.questiionContainer {
+    position: absolute;
+    right: 82px;
+    bottom: 55px;
+    box-shadow: "0 0 0 20 rgba(0,0,0, 0.1)";
+}

@@ -1,0 +1,45 @@
+.container {
+  padding: 20px;
+}
+
+.mainHeadline {
+  font-family: 'SF Pro Display';
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  height: 580px;
+  padding-bottom: 250px;
+  overflow-y: scroll;
+}
+
+.content::-webkit-scrollbar{
+  display: none;
+}
+
+.footer{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  background-color: #F7F8FA;
+  box-shadow: 0px 1px 2px 0px #00000026;
+  border-radius: 8px;
+}
+
+.footer >h2{
+  font-family: 'SF Pro Display';
+font-size: 20px;
+font-weight: 600;
+line-height: 28px;
+letter-spacing: 0px;
+text-align: left;
+
+}

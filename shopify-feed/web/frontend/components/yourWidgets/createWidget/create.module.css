@@ -1,0 +1,159 @@
+.container {
+  padding: 10px;
+}
+
+.cardContainer {
+  background-color: #fff;
+  max-width: 500px;
+  height: 643px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 0px 5px 0px #0000000d;
+}
+.widgetContainer {
+  border-radius: 8px;
+  padding: 16px;
+  margin: auto;
+  height: 645px;
+  overflow-y: scroll;
+}
+.widgetContainer::-webkit-scrollbar {
+  display: none;
+}
+.widgetSetup {
+  display: flex;
+  align-items: center;
+}
+.mainHeadline {
+  font-family: 'SF Pro Display';
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.previewContainer {
+  width: 99%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.postsContainer{
+height: 634px;
+box-shadow: 0px 1px 2px 0px #00000026;
+overflow-y: scroll;
+
+}
+.postsContainer::-webkit-scrollbar{
+  display: none;
+}
+.preview {
+  height: 55px;
+  font-family: 'SF Pro Text';
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.title {
+  font-family: 'SF Pro Text';
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.subTitle {
+  margin: 0 auto;
+  width: 70%;
+  font-family: 'SF Pro Text';
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.followHeadline {
+  font-family: 'SF Pro Display';
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.description {
+  font-family: 'SF Pro Text';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.textWidget {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.settingsItem {
+  display: flex;
+  justify-content: space-between;
+}
+.settingsContainer {
+  border: 1px solid #c9cccf;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 100px;
+}
+.settingsItem > span {
+  margin: 0;
+}
+
+.bigBlock,
+.smallBlock {
+  background-color: #cddbd7;
+}
+.bigBlock {
+  height: 230px;
+}
+.smallBlock {
+  height: 108px;
+}
+
+.deviceTabs > div > div {
+  padding: 0;
+}
+.deviceTabs li {
+  width: 49.7%;
+}
+.deviceTabs li button {
+  padding: 6px 0;
+}
+
+.bigDeviceTabs > div > div {
+  padding: 0;
+}
+.bigDeviceTabs li {
+  width: 49.5%;
+}
+.bigDeviceTabs li button {
+  padding: 6px 0;
+}
+.widgetStepsTabs > div > div {
+  padding: 0;
+}
+.widgetStepsTabs li {
+  width: 33.2%;
+}
+.widgetStepsTabs li button {
+  padding: 6px 0;
+}

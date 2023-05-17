@@ -1,0 +1,32 @@
+.container {
+  padding: 8px 48px;
+  position: relative;
+}
+
+.content{
+  height: 730px;
+  overflow-y: scroll;
+}
+.content::-webkit-scrollbar {
+  display: none;
+}
+.mainTabs > div > div {
+  padding: 0;
+}
+.mainTabs > div > div button {
+  padding: 8px 0;
+}
+.mainTabs > div > div li {
+  width: 19.94%;
+}
+
+.openBtn{
+  border: 1px solid #BABFC3;
+  padding: 8px;
+  background-color: white;
+  position: fixed;
+  bottom: 12px;
+  right: 60px;
+  cursor: pointer;
+  border-radius: 4px;
+}

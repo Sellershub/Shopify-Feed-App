@@ -1,0 +1,87 @@
+.container {
+  border: 1px solid #c9cccf;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 100px;
+}
+
+.headline {
+  text-align: center;
+  background-color: #f6f6f7;
+  padding: 12px;
+  color: #202223;
+  font-family: 'SF Pro Text';
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+
+.smallHeadline {
+  text-align: center;
+  padding: 12px;
+  font-family: 'SF Pro Text';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+
+.positionsContainer {
+  padding: 0 12px 12px 12px;
+}
+.positions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.positionItem {
+  margin: 0 8px;
+}
+.positionHeadline {
+  font-family: 'SF Pro Text';
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.copyContainer {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  border: 1px solid #babfc3;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.copyContainer > span {
+  margin: 2px;
+  font-family: 'SF Pro Text';
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #202223;
+}
+.copyContainerCopied {
+  background: #fafbfb;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  border: 1px solid #babfc3;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.copyContainerCopied > span {
+  margin: 2px;
+  font-family: 'SF Pro Text';
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #8c9196;
+}

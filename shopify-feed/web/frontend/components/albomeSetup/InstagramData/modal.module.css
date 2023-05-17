@@ -1,0 +1,305 @@
+.backGround {
+  cursor: pointer;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: transparent;
+  width: 60%;
+  position: fixed;
+  z-index: 101;
+  opacity: 1 !important;
+  top: 120px;
+  left: 20%;
+}
+
+.modalContainer {
+  aspect-ratio: 1.67;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 0;
+  max-height: 482px;
+  max-width: 788px;
+  display: flex;
+}
+
+.mediaItem {
+  width: 60%;
+  height: 100%;
+  border-top-left-radius: 8px;
+  aspect-ratio: 1;
+  border-bottom-left-radius: 8px;
+}
+
+.button {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.modalAddTagContainer {
+  width: 40%;
+  padding: 20px;
+  position: relative;
+}
+
+.pleaseSelectPlace {
+  box-sizing: border-box;
+  padding: 50px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  font-family: 'SF Pro Text';
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.accInfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.accInfoAvatar {
+  max-width: 48px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.addTagContainer {
+  box-shadow: 0 0 3px #00000026;
+  cursor: pointer;
+  width: 99%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 2.2;
+  border-radius: 8px;
+  margin: 1px;
+}
+
+.addTagIcon {
+  width: 45px;
+  aspect-ratio: 1;
+}
+
+.addTagHeadline {
+  font-family: 'SF Pro Display';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.selectProductContainer {
+  box-shadow: 0 0 3px #00000026;
+}
+.selectProductTopPart {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.selectProductTopPart > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.selectProductHeadline {
+  width: 50%;
+  font-family: 'SF Pro Text';
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.removeProduct {
+  cursor: pointer;
+  font-family: 'SF Pro Text';
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #2c6ecb;
+}
+.wrapper {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.icon {
+  position: absolute;
+  box-sizing: border-box;
+  top: 50%;
+  left: 2px;
+  transform: translateY(-50%);
+}
+
+.input {
+  width: 100%;
+  height: 36px;
+  box-sizing: border-box;
+  padding-left: 1.5rem;
+  border-radius: 4px;
+  border: 1px solid #c9cccf;
+}
+
+.productsContainer {
+  overflow-y: scroll;
+  height: 221px;
+}
+.selectedProducts {
+  overflow-y: scroll;
+  height: 365px;
+}
+.productsContainer::-webkit-scrollbar {
+  display: none;
+}
+.selectedProducts::-webkit-scrollbar {
+  display: none;
+}
+.product {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-top: 1px solid #e4e5e7;
+}
+.hideIcon {
+  display: none;
+}
+.product:hover {
+  background-color: #00000026;
+}
+.product:hover .hideIcon {
+  display: inline-block;
+}
+.product > div {
+  display: flex;
+}
+.product > span {
+  margin: 0;
+}
+
+.productImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.productinfo {
+  margin-left: 12px;
+}
+
+.productName {
+  font-family: 'SF Pro Display';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.productPrice {
+  font-family: 'SF Pro Display';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #6d7175;
+}
+
+.markerContainer {
+  position: relative;
+}
+
+.markerItem {
+  position: absolute;
+  top: -10px;
+  left: -5px;
+}
+.markerItemFirst {
+  position: absolute;
+  background-color: #ffffff;
+  opacity: 0.5;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.markerItemSecond {
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  left: 4px;
+  top: 4px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.markerItemThird {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 8px;
+  top: 8px;
+  border-radius: 50%;
+}
+.hoverContainer {
+  position: absolute;
+  top: 40px;
+  left: -50px;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.hoverInfo{
+  margin-left: 12px;
+}
+.hoverImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+}
+
+.hoverTitle{
+  min-width: 100px;
+  color: #fff;
+  font-family: 'SF Pro Display';
+font-size: 14px;
+font-weight: 700;
+line-height: 20px;
+letter-spacing: 0px;
+text-align: center;
+
+}

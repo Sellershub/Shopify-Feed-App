@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  position: relative;
+}
+.containerHovered {
+  display: flex;
+  position: relative;
+}
+.media {
+  aspect-ratio: 1;
+}
+.hoverContainer,
+.caption {
+  display: none;
+}
+
+.containerHovered:hover .hoverContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  z-index: 7;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerHovered:hover .caption {
+  display: block;
+  opacity: 1 !important;
+}

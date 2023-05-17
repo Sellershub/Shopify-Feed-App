@@ -1,0 +1,58 @@
+import { BrowserRouter } from 'react-router-dom'
+import { NavigationMenu } from '@shopify/app-bridge-react'
+import Routes from './Routes'
+import { Provider } from 'react-redux'
+import { store } from './redux/store'
+import './styles.css'
+
+
+import { AppBridgeProvider, QueryProvider, PolarisProvider } from './components'
+import React, { useEffect } from 'react'
+import axios from 'axios'
+import { NGROK_TUNNEL } from './Constants'
+import { AppProvider } from '@shopify/polaris'
+
+export default function App() {
+  useEffect(() => {
+    axios
+  .get(`${NGROK_TUNNEL}/api/shopify/auth`)
+      .then(({ data }) => {
+        console.log(data);
+        localStorage.setItem("userId", data)
+        return data
+      })
+      .catch((err) => console.log('err', err))
+  }, [])
+  // Any .tsx or .jsx files in /pages will become a route
+  // See documentation for <Routes /> for more info
+  const pages = import.meta.globEager('./pages/**/!(*.test.[jt]sx)*.([jt]sx)')
+
+  const config = {
+    apiKey: 'a104db8d984617340c70d2272778ba38',
+    domain: 'https://h71yq.localtonet.com',
+  };
+
+  return (
+    <AppProvider i18n={undefined} apiKey={config.apiKey} shopOrigin={config.domain}> 
+      <PolarisProvider>
+      <Provider store={store}>
+        <BrowserRouter>
+          <AppBridgeProvider>
+            <QueryProvider>
+              <NavigationMenu
+                navigationLinks={[
+                  {
+                    label: 'Page name',
+                    destination: '/pagename',
+                  },
+                ]}
+              />
+              <Routes pages={pages} />
+            </QueryProvider>
+          </AppBridgeProvider>
+        </BrowserRouter>
+      </Provider>
+    </PolarisProvider>
+    </AppProvider>
+  )
+}

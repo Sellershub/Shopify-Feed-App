@@ -1,0 +1,87 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 220px;
+  position: relative;
+}
+
+.mainHeadline {
+  font-family: 'SF Pro Text';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.description {
+  font-family: 'SF Pro Text';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+  width: 60%;
+  margin-bottom: 20px;
+}
+.list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.elem {
+  display: flex;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.elem > span {
+  margin: 0;
+}
+.name {
+  font-family: 'SF Pro Text';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-left: 8px;
+}
+
+.line {
+  position: absolute;
+  width: 119%;
+  height: 1px;
+  background-color: lightgrey;
+  top: 110px;
+}
+
+.extraInfo {
+  font-family: 'SF Pro Text';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.pro {
+  position: absolute;
+  top: -30px;
+  right: -25px;
+  background-color: #ffd79d;
+  border-radius: 10px;
+  padding: 2px 12px 2px 12px;
+  font-family: 'SF Pro Text';
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: center;
+}

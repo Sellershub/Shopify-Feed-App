@@ -1,0 +1,17 @@
+.container {
+  height: 100vh;
+  padding: 40px;
+  padding-bottom: 40px;
+}
+.cardContentContainer {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.questiionContainer {
+  position: absolute;
+  right: 51px;
+  bottom: 55px;
+}

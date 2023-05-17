@@ -1,0 +1,184 @@
+.backGround {
+  cursor: pointer;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+.postsContainer{
+  display: flex; 
+  flex-wrap: wrap; 
+  overflow-y: scroll
+}
+.postsContainer::-webkit-scrollbar {
+  display: none;
+}
+.mainHeadline {
+  font-family: 'SF Pro Display';
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.title {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+.selectAllContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  height: 40px;
+}
+.selectHeadline{
+font-family: 'SF Pro Display';
+font-size: 20px;
+font-weight: 600;
+line-height: 28px;
+letter-spacing: 0px;
+text-align: left;
+
+}
+.filterTabs >div >div{
+  padding: 0;
+}
+.filterTabs >div >div button{
+  padding: 8px 0;
+}
+.filterTabs >div >div li{
+  width: 16.56%;
+}
+.addButon {
+  width: 36px;
+  height: 36px;
+  background-color: #ddd;
+  border-radius: 4px;
+  background: #ffffff;
+  border: 1px solid #babfc3;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+  position: relative;
+  cursor: pointer;
+}
+
+.plusIcon {
+  position: absolute;
+  top: 7px;
+  left: 6.5px;
+}
+.pinImage {
+  width: 20px;
+  color: white;
+}
+.editIcon {
+  position: absolute;
+  top: 7px;
+  left: 9px;
+}
+.auto_sync {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 90px;
+  padding: 15px;
+  margin-bottom: 30px;
+  background-color: #f6f6f7;
+}
+.actionBtn {
+  cursor: pointer;
+  color: blue;
+  font-size: 14;
+  border: 1px solid blue;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+.second_block {
+  position: relative;
+  width: 140px;
+  display: flex;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+.second_block:hover .innerContainer {
+  visibility: visible;
+}
+.second_block:hover .image {
+  background-color: #000;
+  opacity: 0.8;
+}
+.second_block:hover .absoluteIcon {
+  display: none;
+}
+.innerContainer {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  flex-direction: column;
+  justify-content: space-between;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+}
+.absoluteIcon {
+  position: absolute;
+  bottom: 5.6px;
+  right: 9.6px;
+}
+.showInfo {
+  color: #fff;
+}
+.topPart {
+  display: flex;
+  justify-content: space-between;
+  opacity: 1 !important;
+}
+.image {
+  width: 140px;
+  height: 140px;
+  border-radius: 5px;
+}
+.widgetImage {
+  width: 140px;
+  height: 140px;
+  border-radius: 5px;
+}
+.AlbomeSetup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.bigBlock,
+.smallBlock {
+  background-color: #cddbd7;
+}
+.bigBlock {
+  height: 230px;
+}
+.smallBlock {
+  height: 108px;
+}
+
+.tabs{
+  max-width: 400px;
+}
+.tabs > div > div {
+  padding: 0;
+}
+.tabs li {
+  width: 49.7%;
+}
+.tabs li button {
+  padding: 6px 0;
+}

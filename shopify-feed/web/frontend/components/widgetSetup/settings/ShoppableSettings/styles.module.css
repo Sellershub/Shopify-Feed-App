@@ -1,0 +1,71 @@
+.container {
+  padding: 0 12px;
+}
+.switchContainer {
+  display: flex;
+  margin: 12px 0;
+}
+
+.title {
+  font-family: 'SF Pro Text';
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.label {
+  font-family: 'SF Pro Text';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-right: 6px;
+}
+
+.settingsContainer {
+  background-color: #e9eef3;
+  padding: 6px;
+  margin-top: 12px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  margin: 6px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ctaBtnSettings {
+  margin: 6px 0;
+  width: 50%;
+}
+.ctaBtnSettings >div{
+  display: flex;
+  margin: 6px 0;
+  justify-content: space-between;
+}
+.row > div {
+  padding: 0 6px;
+  display: flex;
+  align-items: center;
+}
+.input {
+  border-radius: 4px;
+  padding: 8px 12px 8px 12px;
+  border: 1px solid #c9cccf;
+  margin-left: 6px;
+}
+.inputBg {
+  padding: 0;
+  border: none;
+  margin-left: 6px;
+}
+.ctaBtnInput{
+  margin: 6px 0;
+}
+.ctaBtnInput input {
+  width: 240px;
+}

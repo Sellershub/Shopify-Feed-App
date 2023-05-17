@@ -1,0 +1,22 @@
+.container {
+  padding: 0 12px;
+  height: 400px;
+  overflow-y: scroll;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+.switchContainer {
+  display: flex;
+  margin: 12px 0;
+}
+
+.label {
+  font-family: 'SF Pro Text';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-right: 6px;
+}
